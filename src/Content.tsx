@@ -16,9 +16,8 @@ const ContentSection = styled.main`
 
   /* grid-row-end: recent 3 */
 
-  grid-template-areas: 'news recent' 'news recent' 'services recent' 'services recent' 'fairs recent' 'fairs recent';
+  grid-template-areas: 'sticky recent';
   grid-template-columns: 35% 65%;
-  grid-template-rows: repeat(6, 200px);
   /* grid-auto-rows: 200px 200px 200px 200px; */
 `;
 
@@ -26,37 +25,43 @@ const RecentPrints = styled(SectionBox)`
   grid-area: recent;
 `;
 
-const News = styled(SectionBox)`
-  position: sticky;
-  top: 1rem;
-  align-self: start;
-  grid-area: news;
-`;
+const News = styled(SectionBox)``;
 
 const Services = styled(SectionBox)`
-  grid-area: services;
+  /* grid-area: services; */
 `;
 
 const Fairs = styled(SectionBox)`
-  grid-area: fairs;
+  /* grid-area: fairs; */
+`;
+
+const StickyColumn = styled.div`
+  grid-area: sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+  top: 0;
+  align-self: start;
 `;
 
 export const Content = () => {
   return (
     <ContentSection>
+      <StickyColumn>
+        <News sectionNuggetTitle='extra extra!' sectionTitle='News'>
+          <NewsContent />
+        </News>
+
+        <Services sectionNuggetTitle='series' sectionTitle='printing for you' />
+        <Fairs sectionNuggetTitle='fairs & things!' sectionTitle='Events' />
+      </StickyColumn>
       <RecentPrints
         sectionNuggetTitle='new stuff!'
         sectionTitle='Recent Prints'
       >
         <RecentPrintContent />
       </RecentPrints>
-
-      <News sectionNuggetTitle='extra extra!' sectionTitle='News'>
-        <NewsContent />
-      </News>
-
-      <Services sectionNuggetTitle='series' sectionTitle='printing for you' />
-      <Fairs sectionNuggetTitle='fairs & things!' sectionTitle='Events' />
     </ContentSection>
   );
 };
