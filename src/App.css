@@ -7,13 +7,15 @@
 
 .App {
   height: calc(100vh - 25px);
+  overflow: scroll;
   background-color: #ffffff;
   width: calc(100% - 25px);
   margin: auto;
+  box-shadow: -5px -5px 0px 0px #000000;
 
   box-sizing: border-box;
   border: 3px solid black;
-  animation: 4s linear 1s infinite alternate none running wrapperAnimation;
+  animation: 3s linear 1s infinite alternate none running wrapperAnimation;
 }
 
 @keyframes wrapperAnimation {
@@ -187,6 +189,6 @@
 
   to {
     box-shadow: 0px 0px 10px 18px #51f4ff14;
-    transform: scale(1.06);
+    transform: scale(1.16);
   }
 }
