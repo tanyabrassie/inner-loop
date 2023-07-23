@@ -27,7 +27,7 @@
     -->
     <title>inner loop press</title>
   </head>
-  <body>
+  <body id="body">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -46,12 +46,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <script>
-    const pupils = Array.from(document.getElementsByClassName('pupil'));
-
     $(function () {
       $('.draggable').draggable({ containment: 'window' });
     });
 
-    const pupilLeft = pupils[0];
+    //This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
+
+    const appContainer = document.getElementById('body');
+
+    document.addEventListener('DOMContentLoaded', () => {
+      appContainer.addEventListener('mousemove', () => {
+        var eye = $('.eye');
+        var x = eye.offset().left + eye.width() / 2;
+        var y = eye.offset().top + eye.height() / 2;
+
+        var rad = Math.atan2(event.pageX - x, event.pageY - y);
+        var rot = rad * (180 / Math.PI) * -1 + 180;
+        eye.css({
+          '-webkit-transform': 'rotate(' + rot + 'deg)',
+          '-moz-transform': 'rotate(' + rot + 'deg)',
+          '-ms-transform': 'rotate(' + rot + 'deg)',
+          transform: 'rotate(' + rot + 'deg)',
+        });
+      });
+    });
   </script>
 </html>

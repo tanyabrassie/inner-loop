@@ -4,7 +4,7 @@ import Header from './Header';
 
 function App() {
   return (
-    <div className='appContainer'>
+    <div id='screen' className='appContainer'>
       <div className='App'>
         <Header />
         <Content />

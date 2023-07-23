@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { SectionBox } from './shared/SectionBox';
 import { RecentPrintContent } from './RecentPrints';
 import { NewsContent } from './NewsContent';
+import { FairContent } from './FairContent';
 
 const ContentSection = styled.main`
-  padding: 5% 2%;
-  height: 100%;
+  padding: 30px 40px;
   width: calc(100% - 5%);
   justify-content: center;
 
@@ -14,11 +14,8 @@ const ContentSection = styled.main`
 
   grid-gap: 40px;
 
-  /* grid-row-end: recent 3 */
-
-  grid-template-areas: 'sticky recent';
-  grid-template-columns: 35% 65%;
-  /* grid-auto-rows: 200px 200px 200px 200px; */
+  grid-template-areas: 'recent sticky';
+  grid-template-columns: 70% 30%;
 `;
 
 const RecentPrints = styled(SectionBox)`
@@ -27,13 +24,9 @@ const RecentPrints = styled(SectionBox)`
 
 const News = styled(SectionBox)``;
 
-const Services = styled(SectionBox)`
-  /* grid-area: services; */
-`;
+const Services = styled(SectionBox)``;
 
-const Fairs = styled(SectionBox)`
-  /* grid-area: fairs; */
-`;
+const Fairs = styled(SectionBox)``;
 
 const StickyColumn = styled.div`
   grid-area: sticky;
@@ -41,7 +34,7 @@ const StickyColumn = styled.div`
   display: flex;
   flex-direction: column;
   grid-gap: 40px;
-  top: 0;
+  top: 30px;
   align-self: start;
 `;
 
@@ -49,12 +42,17 @@ export const Content = () => {
   return (
     <ContentSection>
       <StickyColumn>
-        <News sectionNuggetTitle='extra extra!' sectionTitle='News'>
+        <News sectionNuggetTitle='extra extra!'>
           <NewsContent />
         </News>
 
-        <Services sectionNuggetTitle='series' sectionTitle='printing for you' />
-        <Fairs sectionNuggetTitle='fairs & things!' sectionTitle='Events' />
+        <Services
+          sectionNuggetTitle='printing'
+          sectionTitle='printing for you'
+        />
+        <Fairs sectionNuggetTitle='fairs & things!'>
+          <FairContent />
+        </Fairs>
       </StickyColumn>
       <RecentPrints
         sectionNuggetTitle='new stuff!'
