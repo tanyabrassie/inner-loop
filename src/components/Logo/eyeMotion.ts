@@ -1,6 +1,6 @@
 export const addEyeMotion = () => {
   document.querySelector('body')?.addEventListener('mousemove', eyeball);
-  document.querySelector('body')?.addEventListener('touchmove', eyeballTouch);
+  document.querySelector('body')?.addEventListener('touchstart', eyeballTouch);
 
   function eyeball(event: MouseEvent) {
     const eye = document.querySelectorAll('.eye');
