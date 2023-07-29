@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DisplayType } from '../Typography';
+import { DisplayType } from './Typography';
 
 const Container = styled.section`
   position: relative;

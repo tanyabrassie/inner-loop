@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SectionBox } from './shared/SectionBox';
+import { SectionBox } from './SectionBox';
 import { RecentPrintContent } from './RecentPrints';
 import { NewsContent } from './NewsContent';
 import { FairContent } from './FairContent';

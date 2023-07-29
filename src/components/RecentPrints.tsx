@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import dataZooms from './images/data-zooms.jpg';
-import trangle from './images/triangles-in-progress.png';
-import spaceTrashSpread from './images/space-trash-spread.png';
-import posturePoster from './images/posture-scan.png';
+import dataZooms from '../images/data-zooms.jpg';
+import trangle from '../images/triangles-in-progress.png';
+import spaceTrashSpread from '../images/space-trash-spread.png';
+import posturePoster from '../images/posture-scan.png';
 
 const ContentContainer = styled.div`
   /* width: 100%;

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import innerLoopText from '../inner-loop-text.svg';
+import innerLoopText from '../../inner-loop-text.svg';
 import './logo.css';
+import { addEyeMotion } from './eyeMotion';
 
 const LogoContainer = styled.div`
   position: relative;
@@ -13,8 +14,10 @@ const LogoContainer = styled.div`
 
 const Text = styled.img`
   position: absolute;
-  top: -45px;
   pointer-events: none;
+  top: -29px;
+  max-width: 119px;
+  margin-left: 16px;
 `;
 
 const leftColors = {
@@ -47,6 +50,7 @@ const ResetButton = styled.button`
 
   &:hover {
     border: 4px solid white;
+    transition: 0.5s;
   }
 `;
 
@@ -164,6 +168,8 @@ export const Logo = () => {
         setIsMoved(true);
       });
     });
+
+    addEyeMotion();
   }, []);
 
   return (

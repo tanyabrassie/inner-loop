@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import spaceTrash from './images/space-trash.png';
+import spaceTrash from '../images/space-trash.png';
 
 const ContentContainer = styled.div`
   padding: 0 20px 20px;
