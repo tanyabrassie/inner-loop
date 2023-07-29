@@ -14,6 +14,7 @@ const LogoContainer = styled.div`
 const Text = styled.img`
   position: absolute;
   top: -45px;
+  pointer-events: none;
 `;
 
 const leftColors = {
@@ -30,15 +31,23 @@ const rightColors = {
 
 const ResetButton = styled.button`
   position: absolute;
-  bottom: -70px;
+  bottom: -100px;
   margin: auto;
-  right: -35px;
+  right: -30px;
   background-color: #ffffff;
+  mix-blend-mode: multiply;
   border: 0;
 
-  width: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: black;
   border-radius: 50%;
   cursor: pointer;
+  transition: border 0.5s;
+
+  &:hover {
+    border: 4px solid white;
+  }
 `;
 
 const elementPositions: Record<
@@ -148,11 +157,10 @@ export const Logo = () => {
   };
 
   useEffect(() => {
-    console.log('use effect');
     const draggables = document.querySelectorAll('.draggable');
 
     draggables.forEach((draggable) => {
-      draggable.addEventListener('pointerdown', () => {
+      draggable.addEventListener('mouseup', () => {
         setIsMoved(true);
       });
     });
@@ -160,7 +168,7 @@ export const Logo = () => {
 
   return (
     <LogoContainer>
-      {isMoved && <ResetButton onClick={resetPosition}>&#10005;</ResetButton>}
+      {isMoved && <ResetButton onClick={resetPosition}></ResetButton>}
       <Text src={innerLoopText} />
       <div
         ref={leftOutlineRef}

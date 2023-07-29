@@ -3,7 +3,8 @@ import { DisplayType } from '../Typography';
 
 const Container = styled.section`
   position: relative;
-  border: 2px solid black;
+  border: 0.1px solid black;
+  background-color: white;
 `;
 
 const NuggetTitle = styled.strong`

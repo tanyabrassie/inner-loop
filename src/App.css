@@ -9,6 +9,7 @@
   font-family: monospace;
   display: flex;
   height: calc(100vh - 25px);
+
   overflow: scroll;
   background-color: #ffffff;
   width: calc(100% - 25px);
@@ -16,8 +17,19 @@
   box-shadow: -5px -5px 0px 0px #000000;
 
   box-sizing: border-box;
-  border: 3px solid black;
-  animation: 3s linear 1s infinite alternate none running wrapperAnimation;
+  border: 1px solid black;
+
+  animation-name: wrapperAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    flex-direction: column;
+  }
 }
 
 @keyframes wrapperAnimation {
