@@ -9,6 +9,7 @@
   font-family: monospace;
   display: flex;
   width: calc(100% - 25px);
+  height: calc(100% - 25px);
 
   overflow: scroll;
   background-color: #ffffff;
@@ -28,8 +29,13 @@
 @media screen and (max-width: 800px) {
   .App {
     flex-direction: column;
-    height: auto;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    height: auto;
   }
 }
 

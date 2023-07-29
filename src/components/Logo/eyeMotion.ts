@@ -3,7 +3,7 @@ export const addEyeMotion = () => {
 
   function eyeball(event: MouseEvent) {
     const eye = document.querySelectorAll('.eye');
-    eye.forEach(function (eye: any) {
+    eye.forEach((eye: any) => {
       let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
       let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
 
