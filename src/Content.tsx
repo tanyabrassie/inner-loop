@@ -29,7 +29,7 @@ const RecentPrints = styled(SectionBox)`
 
 const News = styled(SectionBox)``;
 
-const Services = styled(SectionBox)``;
+// const Services = styled(SectionBox)``;
 
 const Fairs = styled(SectionBox)``;
 
