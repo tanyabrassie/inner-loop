@@ -43,7 +43,8 @@ const StickyColumn = styled.div`
   align-self: start;
 
   @media screen and (max-width: 800px) {
-    position: relative;
+    /* position: relative; */
+    margin: 40px 0;
   }
 `;
 

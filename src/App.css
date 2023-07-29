@@ -8,11 +8,10 @@
 .App {
   font-family: monospace;
   display: flex;
-  height: calc(100vh - 25px);
+  width: calc(100% - 25px);
 
   overflow: scroll;
   background-color: #ffffff;
-  width: calc(100% - 25px);
   margin: auto;
   box-shadow: -5px -5px 0px 0px #000000;
 
@@ -29,6 +28,8 @@
 @media screen and (max-width: 800px) {
   .App {
     flex-direction: column;
+    height: auto;
+    margin-top: 20px;
   }
 }
 
