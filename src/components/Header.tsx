@@ -28,7 +28,7 @@ const AboutText = styled.p`
   text-align: right;
 `;
 
-const SayHi = styled.p`
+const SayHi = styled.div`
   font-family: monospace;
   text-align: right;
   padding-top: 10px;
@@ -58,11 +58,11 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Links>
-        <Link>
+        <Link href='https://store.innerloop.press'>
           <JazzyText text='Print Shop' />
         </Link>
         <Circle>&#9702;</Circle>
-        <Link>
+        <Link href='https://instagram.com/innerloop.press'>
           <JazzyText text='Insta' />
         </Link>
       </Links>

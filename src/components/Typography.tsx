@@ -46,6 +46,8 @@ export const JazzyText = ({
 };
 
 export const Link = styled.a`
+  color: unset;
+  text-decoration: none;
   border-bottom: 1px solid white;
   cursor: pointer;
   transition: border 0.2s;
