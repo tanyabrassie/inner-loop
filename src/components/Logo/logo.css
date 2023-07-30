@@ -71,8 +71,8 @@
 .eye:after {
   /*pupil*/
   position: absolute;
-  bottom: 12px;
-  right: 6px;
+  bottom: 5px;
+  right: 0px;
   width: 10px;
   height: 10px;
   background: #000;
