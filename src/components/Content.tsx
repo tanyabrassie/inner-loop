@@ -64,10 +64,7 @@ export const Content = () => {
           <FairContent />
         </Fairs>
       </StickyColumn>
-      <RecentPrints
-        sectionNuggetTitle='new stuff!'
-        sectionTitle='Recent Prints'
-      >
+      <RecentPrints sectionNuggetTitle='new stuff!'>
         <RecentPrintContent />
       </RecentPrints>
     </ContentSection>
