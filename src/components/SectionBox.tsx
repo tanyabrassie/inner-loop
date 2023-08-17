@@ -3,12 +3,12 @@ import { DisplayType } from './Typography';
 
 const Container = styled.section`
   position: relative;
-  border: 2px solid black;
+  border: 2px solid #464545;
   background-color: white;
 `;
 
 const NuggetTitle = styled.strong`
-  background-color: black;
+  background-color: #464545;
   border: 1px solid white;
   color: white;
   position: absolute;

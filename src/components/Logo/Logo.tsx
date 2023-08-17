@@ -43,7 +43,7 @@ const ResetButton = styled.button`
 
   width: 30px;
   height: 30px;
-  background-color: black;
+  background-color: #464545;
   border-radius: 50%;
   cursor: pointer;
   transition: border 0.5s;

@@ -60,13 +60,13 @@
   height: calc(100% - 25px);
 
   overflow: scroll;
-  background: #ffffff;
+  background: #ffffffc2;
   /* background-color: ; */
   margin: auto;
   /* box-shadow: -5px -5px 0px 0px #000000; */
 
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid #464545;
 }
 
 @media screen and (max-width: 800px) {
@@ -84,7 +84,7 @@
 
 @keyframes borderAnimation {
   from {
-    border: 3px solid black;
+    border: 3px solid #464545;
   }
   to {
     border: 3px solid rgb(37, 162, 89);

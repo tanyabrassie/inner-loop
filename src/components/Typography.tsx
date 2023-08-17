@@ -12,7 +12,7 @@ const JazzyLetters = styled.span`
   letter-spacing: 0.5px;
 
   &:hover {
-    color: black;
+    color: #464545;
 
     span {
       display: inline-block;
@@ -52,6 +52,6 @@ export const Link = styled.a`
   cursor: pointer;
   transition: border 0.2s;
   &:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #464545;
   }
 `;
