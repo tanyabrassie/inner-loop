@@ -3,6 +3,54 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+
+  background: linear-gradient(
+    309deg,
+    #ebddff,
+    #fbfbfb,
+    #e1fbf3,
+    #ffffff,
+    #f0dffd
+  );
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
 }
 
 .App {
@@ -12,18 +60,13 @@
   height: calc(100% - 25px);
 
   overflow: scroll;
-  background-color: #ffffff;
+  background: #ffffff;
+  /* background-color: ; */
   margin: auto;
-  box-shadow: -5px -5px 0px 0px #000000;
+  /* box-shadow: -5px -5px 0px 0px #000000; */
 
   box-sizing: border-box;
-  border: 1px solid black;
-
-  animation-name: wrapperAnimation;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
+  border: 2px solid black;
 }
 
 @media screen and (max-width: 800px) {
@@ -36,15 +79,6 @@
 @media screen and (max-width: 500px) {
   .App {
     height: auto;
-  }
-}
-
-@keyframes wrapperAnimation {
-  from {
-    box-shadow: -5px -5px 0px 0px #000000;
-  }
-  to {
-    box-shadow: 5px 5px 0px 0px #000000;
   }
 }
 
