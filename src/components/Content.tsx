@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { SectionBox } from './SectionBox';
 import { RecentPrintContent } from './RecentPrints';
 import { NewsContent } from './NewsContent';
@@ -49,25 +49,55 @@ const StickyColumn = styled.div`
   }
 `;
 
+const slideAway = keyframes`
+  0% {
+    transform: translateX(0);
+    //box-shadow: 24px 4px 84px 100px #fffffff8;
+
+  }
+  100% {
+    transform: translateX(100%);
+   ///box-shadow: 24px 4px 84px 10px #ffffffac;
+
+  }`;
+
+const LoadScreen = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: black;
+  transform: translateX(122%);
+  //box-shadow: 24px 4px 84px 100px #fffffff8;
+
+  animation-delay: 0.3s;
+  animation: ${slideAway} 1.5s;
+`;
+
 export const Content = () => {
   return (
-    <ContentSection>
-      <StickyColumn>
-        <News sectionNuggetTitle='extra extra!'>
-          <NewsContent />
-        </News>
-        {/* 
+    <>
+      <LoadScreen></LoadScreen>
+      <ContentSection>
+        <StickyColumn>
+          <News sectionNuggetTitle='extra extra!'>
+            <NewsContent />
+          </News>
+          {/* 
         <Services
           sectionNuggetTitle='printing'
           sectionTitle='printing for you'
         /> */}
-        <Fairs sectionNuggetTitle='fairs & things'>
-          <FairContent />
-        </Fairs>
-      </StickyColumn>
-      <RecentPrints sectionNuggetTitle='featured'>
-        <RecentPrintContent />
-      </RecentPrints>
-    </ContentSection>
+          <Fairs sectionNuggetTitle='fairs & things'>
+            <FairContent />
+          </Fairs>
+        </StickyColumn>
+        <RecentPrints sectionNuggetTitle='featured'>
+          <RecentPrintContent />
+        </RecentPrints>
+      </ContentSection>
+    </>
   );
 };

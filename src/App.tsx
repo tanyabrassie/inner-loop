@@ -33,7 +33,7 @@ function App() {
       <div className='App'>
         <Header />
         <Content />
-        <LoadScreen></LoadScreen>
+        {/* <LoadScreen></LoadScreen> */}
       </div>
       {/* <Footer /> */}
     </div>
