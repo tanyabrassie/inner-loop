@@ -121,7 +121,9 @@
   left: 6px;
   right: 0;
 
-  background-color: #e6c9ff;
+  /* background-color: #e6c9ff; */
+  /* background-color: #e9d1e7; */
+  background: linear-gradient(#d59fff, #e6d4e2);
   mix-blend-mode: multiply;
 }
 
@@ -134,6 +136,7 @@
   left: 69px;
   right: 0;
 
-  background-color: #adfffa;
+  background: linear-gradient(#bbffed, #a3fff4);
+
   mix-blend-mode: multiply;
 }

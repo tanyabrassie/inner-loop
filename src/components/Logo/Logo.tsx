@@ -21,9 +21,11 @@ const Text = styled.img`
 `;
 
 const leftColors = {
-  purple: '#efcbff',
+  //purple: '#efcbff',
+  purple: 'linear-gradient(#ffbfff, #f6b6d1)',
   yellow: '#eeff5b',
-  blue: '#07dbff',
+  blue: '#8385ff',
+  lime: '#efff61',
 };
 
 const rightColors = {
@@ -134,9 +136,13 @@ export const Logo = () => {
 
   const onLeftCircleClick = () => {
     if (leftCircleRef.current) {
+      console.log('leftCir', leftCircleRef);
       const nextState = leftIndex === colorCount ? 0 : leftIndex + 1;
       setLeftIndex(nextState);
+      leftCircleRef.current.style.background = leftColorArray[nextState];
       leftCircleRef.current.style.backgroundColor = leftColorArray[nextState];
+      leftCircleRef.current.style.backgroundImage = 'hi';
+      leftCircleRef.current.style.backgroundSize = '';
     }
   };
 
@@ -144,7 +150,11 @@ export const Logo = () => {
     if (rightCircleRef.current) {
       const nextState = rightIndex === colorCount ? 0 : rightIndex + 1;
       setRightIndex(nextState);
-      rightCircleRef.current.style.backgroundColor = rightColorArray[nextState];
+      rightCircleRef.current.style.backgroundImage = '';
+      rightCircleRef.current.style.backgroundSize = '';
+      console.log('next step');
+      console.log(rightCircleRef);
+      rightCircleRef.current.style.background = rightColorArray[nextState];
     }
   };
 
@@ -175,7 +185,7 @@ export const Logo = () => {
   return (
     <LogoContainer>
       {isMoved && <ResetButton onClick={resetPosition}></ResetButton>}
-      <Text src={innerLoopText} />
+      <Text alt='inner loop logo text' src={innerLoopText} />
       <div
         ref={leftOutlineRef}
         className='left-outline eye-left draggable'

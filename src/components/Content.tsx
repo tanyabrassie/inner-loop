@@ -8,6 +8,7 @@ const ContentSection = styled.main`
   padding: 40px;
   width: calc(100% - 5%);
   justify-content: center;
+  position: relative;
 
   display: grid;
   margin: auto;
@@ -60,11 +61,11 @@ export const Content = () => {
           sectionNuggetTitle='printing'
           sectionTitle='printing for you'
         /> */}
-        <Fairs sectionNuggetTitle='fairs & things!'>
+        <Fairs sectionNuggetTitle='fairs & things'>
           <FairContent />
         </Fairs>
       </StickyColumn>
-      <RecentPrints sectionNuggetTitle='new stuff!'>
+      <RecentPrints sectionNuggetTitle='featured'>
         <RecentPrintContent />
       </RecentPrints>
     </ContentSection>
