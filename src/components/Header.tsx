@@ -41,7 +41,7 @@ const Links = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 800px) {
-    align-self: flex-start;
+    align-self: center;
   }
 `;
 
@@ -52,6 +52,12 @@ const Circle = styled.span`
 
 const AboutContainer = styled.div`
   align-self: flex-end;
+
+  @media screen and (max-width: 800px) {
+    align-self: center;
+    width: 100%;
+    border-top: 1px solid black;
+  }
 `;
 
 const Header = () => {

@@ -1,5 +1,7 @@
 .appContainer {
   display: flex;
+  width: 100vw;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -14,12 +16,12 @@
   );
   background-size: 1000% 1000%;
 
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  -webkit-animation: gradientMorph 10s ease infinite;
+  -moz-animation: gradientMorph 10s ease infinite;
+  animation: gradientMorph 10s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes gradientMorph {
   0% {
     background-position: 0% 13%;
   }
@@ -30,7 +32,7 @@
     background-position: 0% 13%;
   }
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes gradientMorph {
   0% {
     background-position: 0% 13%;
   }
@@ -41,7 +43,7 @@
     background-position: 0% 13%;
   }
 }
-@keyframes AnimationName {
+@keyframes gradientMorph {
   0% {
     background-position: 0% 13%;
   }
@@ -50,6 +52,15 @@
   }
   100% {
     background-position: 0% 13%;
+  }
+}
+
+@keyframes disableScroll {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: scroll;
   }
 }
 
@@ -60,14 +71,15 @@
   width: calc(100% - 25px);
   height: calc(100% - 25px);
 
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background: #ffffffc2;
-  /* background-color: ; */
   margin: auto;
-  /* box-shadow: -5px -5px 0px 0px #000000; */
 
   box-sizing: border-box;
   border: 2px solid #464545;
+
+  animation: disableScroll 4s;
 }
 
 @media screen and (max-width: 800px) {
@@ -80,14 +92,5 @@
 @media screen and (max-width: 500px) {
   .App {
     height: auto;
-  }
-}
-
-@keyframes borderAnimation {
-  from {
-    border: 3px solid #464545;
-  }
-  to {
-    border: 3px solid rgb(37, 162, 89);
   }
 }
