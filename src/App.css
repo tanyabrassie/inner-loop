@@ -88,9 +88,3 @@
     margin-top: 20px;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .App {
-    height: auto;
-  }
-}

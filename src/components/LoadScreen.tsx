@@ -1,14 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-export const disableXScroll = keyframes`
-  from {
-    overflow-x: hidden;
-  } 
-  to {
-    overflow-x: auto;
-  } 
-`;
-
 const slideAway = keyframes`
   0% {
     transform: translateX(0);
@@ -32,7 +23,7 @@ const LoadingScreen = styled.div`
   //box-shadow: 24px 4px 84px 100px #fffffff8;
 
   animation-delay: 0.3s;
-  animation: ${slideAway} 1.5s;
+  animation: ${slideAway} 1.3s;
 `;
 
 export const LoadScreen = () => {
