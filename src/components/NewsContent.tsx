@@ -35,12 +35,20 @@ const Image = styled.img`
   transform: rotate(1deg);
   mix-blend-mode: multiply;
   animation: 1s infinite alternate-reverse ${imageRotate};
+
+  &:hover {
+    filter: saturate(1.3);
+    translate: 0 2px;
+    animation-duration: 0.2s;
+  }
 `;
 
 export const NewsContent = () => {
   return (
     <ContentContainer>
-      <Image src={spaceTrash} alt='image of Space Trash zine cover' />
+      <a href='https://store.innerloop.press/products/space-trash'>
+        <Image src={spaceTrash} alt='image of Space Trash zine cover' />
+      </a>
       Space trash is here! A new zine about the consequences of space
       exploration.
     </ContentContainer>

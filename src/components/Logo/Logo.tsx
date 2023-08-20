@@ -22,16 +22,16 @@ const Text = styled.img`
 
 const leftColors = {
   //purple: '#efcbff',
-  purple: 'linear-gradient(#ffbfff, #f6b6d1)',
+  purple: 'linear-gradient(rgb(255 207 59 / 91%), rgb(255 175 209 / 69%))',
   yellow: '#eeff5b',
-  blue: '#8385ff',
+  blue: 'radial-gradient(circle, rgb(63 94 251 / 44%) 0%, rgb(252 70 107 / 71%) 100%)',
   lime: '#efff61',
 };
 
 const rightColors = {
   lightBlue: '#adfffa',
   green: '#adffdf',
-  deepPurple: '#dd86ff',
+  deepPurple: 'linear-gradient(rgb(131, 133, 255), rgb(131 170 255))',
 };
 
 const ResetButton = styled.button`

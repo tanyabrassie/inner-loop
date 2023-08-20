@@ -136,7 +136,7 @@
   left: 69px;
   right: 0;
 
-  background: linear-gradient(#bbffed, #a3fff4);
+  background: radial-gradient(#ffe8c7, #a1fff4);
 
   mix-blend-mode: multiply;
 }
