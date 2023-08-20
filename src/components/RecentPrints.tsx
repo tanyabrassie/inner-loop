@@ -4,6 +4,7 @@ import trianglePile from '../images/triangle-pile.webp';
 import spacehouse from '../images/SpaceHouse.webp';
 import society from '../images/society.webp';
 import natureBlur from '../images/nature-blur.webp';
+import stretchPeach from '../images/stretch-peach.webp';
 
 import spaceTrashSpread from '../images/space-trash-spread.webp';
 import posturePoster from '../images/posture-scan.webp';
@@ -30,10 +31,17 @@ export const RecentPrintContent = () => {
       <Image src={trianglePile} alt='triangle pile poster image' />
       <Image
         loading='lazy'
+        src={stretchPeach}
+        alt='image of Data Zooms poster'
+      />
+
+      <Image
+        loading='lazy'
         src={learningPoster}
         alt='image of Learning Poster'
       />
       <Image loading='lazy' src={dataZooms} alt='image of Data Zooms poster' />
+
       <Image
         loading='lazy'
         src={spaceTrashSpread}
