@@ -29,6 +29,11 @@ const Text = styled.strong`
 export const RecentPrintContent = () => {
   return (
     <ContentContainer>
+      <Image
+        loading='lazy'
+        src={spaceTrashSpread}
+        alt='image of Space Trash zine.'
+      />
       <Image src={trianglePile} alt='triangle pile poster image' />
       <Image
         loading='lazy'
@@ -41,24 +46,22 @@ export const RecentPrintContent = () => {
         src={learningPoster}
         alt='image of Learning Poster'
       />
-      <Image loading='lazy' src={dataZooms} alt='image of Data Zooms poster' />
 
-      <Image
-        loading='lazy'
-        src={spaceTrashSpread}
-        alt='image of Space Trash zine.'
-      />
+      <Image loading='lazy' src={posturePoster} alt='image of Poster poster' />
+
       <Image
         loading='lazy'
         src={natureBlur}
         alt='image of Nature Blur Poster'
       />
-      <Image loading='lazy' src={posturePoster} alt='image of Poster poster' />
+      <Image loading='lazy' src={dataZooms} alt='image of Data Zooms poster' />
+
       <Image
         loading='lazy'
         src={spacehouse}
         alt='image of Space House poster'
       />
+
       <Image loading='lazy' src={society} alt='image of Society poster' />
       <Text>...more coming soon!</Text>
     </ContentContainer>
