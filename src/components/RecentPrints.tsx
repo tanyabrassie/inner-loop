@@ -13,6 +13,7 @@ import learningPoster from '../images/learning.webp';
 const ContentContainer = styled.div`
   padding: 20px;
   background-color: black;
+  columns: 20rem;
 `;
 
 const Image = styled.img`
