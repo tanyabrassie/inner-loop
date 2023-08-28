@@ -24,6 +24,7 @@ const Image = styled.img`
 const Text = styled.strong`
   padding: 30px 10px;
   display: inline-block;
+  // color: red;
 `;
 
 export const RecentPrintContent = () => {
