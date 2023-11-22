@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Logo } from "./Logo/Logo";
 import { JazzyText, Link } from "./Typography";
 import { EmailLink } from "./EmailLink";
-import { Link as RouterLink } from "react-router-dom";
 
 const HeaderContainer = styled.nav`
   display: grid;
@@ -35,8 +34,6 @@ const SayHi = styled.div`
   text-align: right;
   padding-top: 10px;
 `;
-
-const ButtonLink = () => {};
 
 const Links = styled.div`
   display: flex;
