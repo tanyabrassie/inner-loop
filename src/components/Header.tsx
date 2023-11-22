@@ -27,6 +27,7 @@ const HeaderContainer = styled.nav`
 const AboutText = styled.p`
   font-family: monospace;
   text-align: right;
+  line-height: 1.8;
 `;
 
 const SayHi = styled.div`
