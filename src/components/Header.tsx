@@ -1,7 +1,8 @@
-import styled from 'styled-components';
-import { Logo } from './Logo/Logo';
-import { JazzyText, Link } from './Typography';
-import { EmailLink } from './EmailLink';
+import styled from "styled-components";
+import { Logo } from "./Logo/Logo";
+import { JazzyText, Link } from "./Typography";
+import { EmailLink } from "./EmailLink";
+import { Link as RouterLink } from "react-router-dom";
 
 const HeaderContainer = styled.nav`
   display: grid;
@@ -34,6 +35,8 @@ const SayHi = styled.div`
   padding-top: 10px;
 `;
 
+const ButtonLink = () => {};
+
 const Links = styled.div`
   display: flex;
   align-self: flex-start;
@@ -64,12 +67,12 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Links>
-        <Link href='https://store.innerloop.press'>
-          <JazzyText text='Print Shop' />
+        <Link href="https://store.innerloop.press">
+          <JazzyText text="Store" />
         </Link>
         <Circle>&#9702;</Circle>
-        <Link href='https://instagram.com/innerloop.press'>
-          <JazzyText text='Insta' />
+        <Link href="https://instagram.com/innerloop.press">
+          <JazzyText text="Insta" />
         </Link>
       </Links>
       <Logo />

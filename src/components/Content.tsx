@@ -1,9 +1,12 @@
-import styled from 'styled-components';
-import { SectionBox } from './SectionBox';
-import { RecentPrintContent } from './RecentPrints';
-import { NewsContent } from './NewsContent';
-import { FairContent } from './FairContent';
-import { LoadScreen } from './LoadScreen';
+import styled from "styled-components";
+import { SectionBox } from "./SectionBox";
+import { RecentPrintContent } from "./RecentPrints";
+import { NewsContent } from "./NewsContent";
+
+import { FairContent } from "./FairContent";
+import { LoadScreen } from "./LoadScreen";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { ServicesContent } from "./ServicesContent";
 
 const ContentSection = styled.main`
   padding: 40px;
@@ -16,7 +19,7 @@ const ContentSection = styled.main`
 
   grid-gap: 40px;
 
-  grid-template-areas: 'recent sticky';
+  grid-template-areas: "recent sticky";
   grid-template-columns: 70% 30%;
 
   @media screen and (max-width: 800px) {
@@ -31,7 +34,7 @@ const RecentPrints = styled(SectionBox)`
 
 const News = styled(SectionBox)``;
 
-// const Services = styled(SectionBox)``;
+const Services = styled(SectionBox)``;
 
 const Fairs = styled(SectionBox)``;
 
@@ -50,27 +53,48 @@ const StickyColumn = styled.div`
   }
 `;
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <RecentPrints sectionNuggetTitle="featured">
+        <RecentPrintContent />
+      </RecentPrints>
+    ),
+  },
+  {
+    path: "/services",
+    element: (
+      <RecentPrints sectionNuggetTitle="featured">
+        <RecentPrintContent />
+      </RecentPrints>
+    ),
+  },
+]);
+
 export const Content = () => {
   return (
     <>
       <LoadScreen />
       <ContentSection>
-        <StickyColumn>
-          <News sectionNuggetTitle='extra extra!'>
-            <NewsContent />
-          </News>
-          {/* 
-        <Services
-          sectionNuggetTitle='printing'
-          sectionTitle='printing for you'
-        /> */}
-          <Fairs sectionNuggetTitle='fairs & things'>
-            <FairContent />
-          </Fairs>
-        </StickyColumn>
-        <RecentPrints sectionNuggetTitle='featured'>
+        <RecentPrints sectionNuggetTitle="featured">
           <RecentPrintContent />
         </RecentPrints>
+        <StickyColumn>
+          <News sectionNuggetTitle="extra extra!">
+            <NewsContent />
+          </News>
+
+          <Fairs sectionNuggetTitle="fairs & things">
+            <FairContent />
+          </Fairs>
+
+          {/* <Services sectionNuggetTitle="printing services">
+            <ServicesContent />
+          </Services> */}
+        </StickyColumn>
+
+        <RouterProvider router={router} />
       </ContentSection>
     </>
   );

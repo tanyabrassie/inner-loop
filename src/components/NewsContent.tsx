@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import spaceTrash from '../images/space-trash-cover.webp';
+import styled, { keyframes } from "styled-components";
+import spaceTrash from "../images/space-trash-cover.webp";
 
 const ContentContainer = styled.div`
   padding: 0 20px 20px;
@@ -9,22 +9,13 @@ const ContentContainer = styled.div`
 const imageRotate = keyframes`
   0% {
     transform: rotate(1deg);
-  } 
-
-
-  
+  }
   50% {
     transform: rotate(0deg);
-  
   }
-
-  
   100% {
     transform: rotate(1deg);
-  
   }
-
-
 `;
 
 const Image = styled.img`
@@ -46,8 +37,8 @@ const Image = styled.img`
 export const NewsContent = () => {
   return (
     <ContentContainer>
-      <a href='https://store.innerloop.press/products/space-trash'>
-        <Image src={spaceTrash} alt='image of Space Trash zine cover' />
+      <a href="https://store.innerloop.press/products/space-trash">
+        <Image src={spaceTrash} alt="image of Space Trash zine cover" />
       </a>
       Space trash is here! A new zine about the consequences of space
       exploration.

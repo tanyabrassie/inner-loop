@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 const ContentContainer = styled.div`
   padding: 30px 20px 20px;
@@ -31,7 +31,7 @@ const ListItem = styled.li<{ time: string }>`
   }
 
   &::before {
-    content: '⎗';
+    content: "⎗";
     display: inline-block;
     font-weight: 800;
     font-size: 27px;
@@ -46,15 +46,16 @@ const ListItem = styled.li<{ time: string }>`
 export const FairContent = () => {
   return (
     <ContentContainer>
-      Upcoming Fairs!
+      Recent Fairs
       <List>
         <ListItem time={`0s`}>
-          <a href='https://laabf2023.printedmatterartbookfairs.org/'>
+          <a href="https://laabf2023.printedmatterartbookfairs.org/">
             LA Art Book Fair 2023
           </a>
         </ListItem>
+        <s></s>
         <ListItem time={`.2s`}>
-          <a href='https://bostonartbookfair.com/'>Boston Art Book Fair 2023</a>
+          <a href="https://bostonartbookfair.com/">Boston Art Book Fair 2023</a>
         </ListItem>
       </List>
     </ContentContainer>
