@@ -6,7 +6,7 @@ import { NewsContent } from "./NewsContent";
 import { FairContent } from "./FairContent";
 import { LoadScreen } from "./LoadScreen";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { ServicesContent } from "./ServicesContent";
+// import { ServicesContent } from "./ServicesContent";
 
 const ContentSection = styled.main`
   padding: 40px;
