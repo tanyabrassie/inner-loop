@@ -10,6 +10,7 @@ import sexyBook from "../images/sexy-book.webp";
 import spaceTrashSpread from "../images/space-trash-spread.webp";
 import posturePoster from "../images/posture-scan.webp";
 import learningPoster from "../images/learning.webp";
+import eyePoster from "../images/eye-doctor.webp";
 
 import userFriendly from "../images/user-friendly.png";
 import eWasteSpread from "../images/e-waste-spread.png";
@@ -35,6 +36,13 @@ export const RecentPrintContent = () => {
   return (
     <ContentContainer>
       <Image loading="lazy" src={toxicEarth} alt="Radioactive Land Poster" />
+
+      <Image
+        loading="lazy"
+        src={eyePoster}
+        alt="image of poster with an eye inspired imagery."
+      />
+
       <Image
         loading="lazy"
         src={spaceTrashSpread}
@@ -61,6 +69,7 @@ export const RecentPrintContent = () => {
         src={sexyBook}
         alt="image of poster with an illustration of a sexy book on it."
       />
+
       <Image
         loading="lazy"
         src={natureBlur}

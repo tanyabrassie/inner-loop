@@ -22,7 +22,7 @@ const ContentSection = styled.main`
   grid-template-areas: "recent sticky";
   grid-template-columns: 70% 30%;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     display: unset;
     padding: 0px;
   }
@@ -47,30 +47,11 @@ const StickyColumn = styled.div`
   top: 40px;
   align-self: start;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     /* position: relative; */
     margin: 40px 0;
   }
 `;
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <RecentPrints sectionNuggetTitle="featured">
-        <RecentPrintContent />
-      </RecentPrints>
-    ),
-  },
-  {
-    path: "/services",
-    element: (
-      <RecentPrints sectionNuggetTitle="featured">
-        <RecentPrintContent />
-      </RecentPrints>
-    ),
-  },
-]);
 
 export const Content = () => {
   return (
@@ -93,8 +74,6 @@ export const Content = () => {
             <ServicesContent />
           </Services> */}
         </StickyColumn>
-
-        <RouterProvider router={router} />
       </ContentSection>
     </>
   );

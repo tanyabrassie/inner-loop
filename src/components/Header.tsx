@@ -15,7 +15,7 @@ const HeaderContainer = styled.nav`
   padding: 30px;
   flex-basis: 20%;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -41,7 +41,7 @@ const Links = styled.div`
   padding-top: 3px;
   justify-content: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     align-self: center;
   }
 `;
@@ -54,7 +54,7 @@ const Circle = styled.span`
 const AboutContainer = styled.div`
   align-self: flex-end;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     align-self: center;
     width: 100%;
     border-top: 1px solid black;

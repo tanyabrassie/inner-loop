@@ -46,16 +46,20 @@ const ListItem = styled.li<{ time: string }>`
 export const FairContent = () => {
   return (
     <ContentContainer>
-      Recent Fairs
+      Upcoming & Recent Fairs
       <List>
+        <ListItem time={`.4s`}>
+          <a href="https://www.jerseyartbookfair.org/">
+            Jersey Art Book Fair 2024
+          </a>
+        </ListItem>
+        <ListItem time={`.2s`}>
+          <a href="https://bostonartbookfair.com/">Boston Art Book Fair 2023</a>
+        </ListItem>
         <ListItem time={`0s`}>
           <a href="https://laabf2023.printedmatterartbookfairs.org/">
             LA Art Book Fair 2023
           </a>
-        </ListItem>
-        <s></s>
-        <ListItem time={`.2s`}>
-          <a href="https://bostonartbookfair.com/">Boston Art Book Fair 2023</a>
         </ListItem>
       </List>
     </ContentContainer>
