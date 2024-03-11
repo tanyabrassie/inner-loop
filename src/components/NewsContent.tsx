@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import spaceTrash from "../images/space-trash-cover.webp";
+import featuredCover from "../images/toxic-lagoons-southern-edition-cover.jpg";
 
 const ContentContainer = styled.div`
   padding: 0 20px 20px;
@@ -17,6 +17,9 @@ const imageRotate = keyframes`
     transform: rotate(1deg);
   }
 `;
+
+const storeLink =
+  "https://store.innerloop.press/products/toxic-lagoons-southern-edition";
 
 const Image = styled.img`
   width: 80%;
@@ -37,11 +40,12 @@ const Image = styled.img`
 export const NewsContent = () => {
   return (
     <ContentContainer>
-      <a href="https://store.innerloop.press/products/space-trash">
-        <Image src={spaceTrash} alt="image of Space Trash zine cover" />
+      <a href={storeLink}>
+        <Image src={featuredCover} alt="image of Space Trash zine cover" />
       </a>
-      Space trash is here! A new zine about the consequences of space
-      exploration.
+      Toxic Lagoons - Southern Edition is now available! The last in the Toxic
+      Lagoons series, this risograph printed zine examines very polluted places
+      called Superfund sites in the southern United States.
     </ContentContainer>
   );
 };

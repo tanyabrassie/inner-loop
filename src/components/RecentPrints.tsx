@@ -14,6 +14,7 @@ import eyePoster from "../images/eye-doctor.webp";
 
 import userFriendly from "../images/user-friendly.png";
 import eWasteSpread from "../images/e-waste-spread.png";
+import spaceTrashCover from "../images/space-trash-cover.webp";
 
 const ContentContainer = styled.div`
   padding: 20px;
@@ -24,6 +25,7 @@ const ContentContainer = styled.div`
 const Image = styled.img`
   width: 100%;
   padding: 20px;
+  background-blend-mode: multiply;
 `;
 
 const Text = styled.strong`
@@ -62,6 +64,12 @@ export const RecentPrintContent = () => {
         loading="lazy"
         src={learningPoster}
         alt="image of Learning Poster"
+      />
+
+      <Image
+        loading="lazy"
+        src={spaceTrashCover}
+        alt="Space Trash Zine cover"
       />
 
       <Image

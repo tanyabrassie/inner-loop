@@ -49,16 +49,28 @@ export const FairContent = () => {
       Upcoming & Recent Fairs
       <List>
         <ListItem time={`.4s`}>
+          <a href="https://artbookfair.eastcityart.com/">
+            Capital Art Book Fair - April 2024
+          </a>
+        </ListItem>
+        <ListItem time={`.4s`}>
+          <a href="https://multipleformats.cargo.site/">
+            Multiple Formats - March 2024
+          </a>
+        </ListItem>
+        <ListItem time={`.4s`}>
           <a href="https://www.jerseyartbookfair.org/">
-            Jersey Art Book Fair 2024
+            Jersey Art Book Fair - February 2024
           </a>
         </ListItem>
         <ListItem time={`.2s`}>
-          <a href="https://bostonartbookfair.com/">Boston Art Book Fair 2023</a>
+          <a href="https://bostonartbookfair.com/">
+            Boston Art Book Fair - November 2023
+          </a>
         </ListItem>
         <ListItem time={`0s`}>
           <a href="https://laabf2023.printedmatterartbookfairs.org/">
-            LA Art Book Fair 2023
+            LA Art Book Fair - August 2023
           </a>
         </ListItem>
       </List>
