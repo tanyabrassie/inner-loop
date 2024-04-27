@@ -15,6 +15,8 @@ import eyePoster from "../images/eye-doctor.webp";
 import userFriendly from "../images/user-friendly.png";
 import eWasteSpread from "../images/e-waste-spread.png";
 import spaceTrashCover from "../images/space-trash-cover.webp";
+import toxicLagoonsSpread from "../images/toxic-lagoons-southern-spread.jpg";
+import leisurePoster from "../images/leisure.jpg";
 
 const ContentContainer = styled.div`
   padding: 20px;
@@ -53,6 +55,12 @@ export const RecentPrintContent = () => {
 
       <Image loading="lazy" src={posturePoster} alt="image of Poster poster" />
 
+      <Image
+        loading="lazy"
+        src={toxicLagoonsSpread}
+        alt="Image of inside spread of Toxic Lagoons zine"
+      />
+
       <Image src={trianglePile} alt="triangle pile poster image" />
       <Image
         loading="lazy"
@@ -64,6 +72,12 @@ export const RecentPrintContent = () => {
         loading="lazy"
         src={learningPoster}
         alt="image of Learning Poster"
+      />
+
+      <Image
+        loading="lazy"
+        src={leisurePoster}
+        alt="scan of an inside spread of e-waste zine."
       />
 
       <Image

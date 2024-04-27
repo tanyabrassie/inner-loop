@@ -12,7 +12,7 @@ const HeaderContainer = styled.nav`
   align-items: center;
   justify-content: flex-end;
 
-  padding: 30px;
+  padding: 30px 15px;
   flex-basis: 20%;
 
   @media screen and (max-width: 1024px) {
@@ -27,6 +27,7 @@ const AboutText = styled.p`
   font-family: monospace;
   text-align: right;
   line-height: 1.8;
+  font-size: 12px;
 `;
 
 const SayHi = styled.div`
@@ -77,8 +78,9 @@ const Header = () => {
       <AboutContainer>
         <div>
           <AboutText>
-            A small-batch
-            <br /> risoprinting press
+            <i>Printing information as art</i>
+            <br></br>
+            A small-batch risograph press
             <br /> <strong>Philadelphia, PA</strong>
           </AboutText>
           <SayHi>
