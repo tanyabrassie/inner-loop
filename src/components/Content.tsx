@@ -19,7 +19,7 @@ const ContentSection = styled.main`
   grid-gap: 40px;
 
   grid-template-areas: "recent sticky";
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
 
   @media screen and (max-width: 1024px) {
     display: unset;
@@ -37,7 +37,7 @@ const News = styled(SectionBox)``;
 
 const Fairs = styled(SectionBox)``;
 
-const StickyColumn = styled.div`
+const StickyColumn = styled.section`
   grid-area: sticky;
   position: sticky;
   display: flex;

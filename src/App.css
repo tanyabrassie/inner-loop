@@ -6,7 +6,7 @@
   justify-content: center;
   height: 100vh;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     309deg,
     #ebddff,
     #fbfbfb,
@@ -18,7 +18,7 @@
 
   -webkit-animation: gradientMorph 10s ease infinite;
   -moz-animation: gradientMorph 10s ease infinite;
-  animation: gradientMorph 10s ease infinite;
+  animation: gradientMorph 10s ease infinite; */
 }
 
 @-webkit-keyframes gradientMorph {

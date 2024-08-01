@@ -43,12 +43,13 @@ const ListItem = styled.li<{ time: string }>`
   }
 `;
 
-export const FairContent = () => {
+export const FairContent = ({ test }: any) => {
   return (
     <ContentContainer>
       Upcoming & Recent Fairs
       <List>
-        <ListItem time={`.4s`}>
+        <ListItem time={`.4s`}>Fall events to be announced!</ListItem>
+        {/* <ListItem time={`.4s`}>
           <a href="https://artbookfair.eastcityart.com/">
             Capital Art Book Fair - April 2024
           </a>
@@ -72,7 +73,7 @@ export const FairContent = () => {
           <a href="https://laabf2023.printedmatterartbookfairs.org/">
             LA Art Book Fair - August 2023
           </a>
-        </ListItem>
+        </ListItem> */}
       </List>
     </ContentContainer>
   );
